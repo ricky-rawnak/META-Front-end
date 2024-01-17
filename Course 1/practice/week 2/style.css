@@ -1,0 +1,44 @@
+/* h1{
+    color: red;
+}
+#head1{
+    color: greenyellow;
+}
+p { 
+    color: blue; 
+  }
+  #latest { 
+    background-color: gray; 
+  }
+  .navigation { 
+    margin: 20px;
+    
+  }
+  p.coolest { 
+    margin: 30px;
+  }
+  #roller div h1 {
+    color: blue;
+  }
+  #roller h1{
+    color:darkcyan;
+  }
+  a:hover {
+    color: orange;
+  } */
+
+  /* .parent {
+    border: 2px solid rosybrown;
+  } */
+  /* .child {
+    width: 50%;
+    padding: 50px;
+    border: 10px solid rgb(247, 211, 10);
+  } */
+  .child {
+    float: right;
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }

@@ -1,0 +1,163 @@
+<!--example.com -->
+<!doctype html>
+<html>
+
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+        body {
+            background-color: #f0f0f2;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+        }
+
+        div {
+            width: 600px;
+            margin: 5em auto;
+            padding: 2em;
+            background-color: #fdfdff;
+            border-radius: 0.5em;
+            box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.02);
+        }
+
+        a:link,
+        a:visited {
+            color: #38488f;
+            text-decoration: none;
+        }
+
+        @media (max-width: 700px) {
+            div {
+                margin: 0 auto;
+                width: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 onclick="handleClick2()">Example Domain</h1>
+        <p>This domain is for use in illustrative examples in documents. You may use this
+            domain in literature without prior coordination or asking for permission.</p>
+        <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+    </div>
+    <script>
+        /*
+        //1
+         const target = document.querySelector('body')
+         function handleClick() {
+             console.log('clicked the body')
+         }
+         target.addEventListener('click', handleClick)
+         function handleClick2() {
+             console.log('clicked the heading')
+         }
+         */
+
+        /*
+        //2
+        let answer = prompt('What is your name?');
+        if(typeof(answer)==='string'){
+            var h1=document.createElement('h1')
+            h1.innerText=answer
+            document.body.innerText= ''
+            document.body.appendChild(h1)
+        }
+        */
+
+        /*
+        //3
+        var h1 = document.createElement('h1')
+        h1.innerText = "Type string input"
+        var input = document.createElement('input')
+        input.setAttribute('type', 'text')
+        document.body.innerText = ''
+        document.body.appendChild(h1)
+        document.body.appendChild(input)
+
+        input.addEventListener('change',function(){
+            //console.log(input.value)
+        h1.innerText=input.value    
+        })
+
+        var h2=document.createElement('h2')
+        h2.innerText="Type age number"
+        var input=document.createElement('input')
+        input.setAttribute('type','number')
+        document.body.innerText=''
+        document.body.appendChild(h2)
+        document.body.appendChild(input)
+        input.addEventListener('change',function(){
+            h2.innerText=input.value
+        })
+        */
+
+        /*
+        //4
+        var h1 = document.querySelector('h1')
+        var arr = ['Example Domain',
+        'First Click',
+        'Second Click',
+        'Third Click']
+        function handleClicks() {
+            switch (h1.innerText) {
+                case arr[0]:
+                    h1.innerText = arr[1]
+                    break;
+                case arr[1]:
+                    h1.innerText = arr[2]
+                    break;
+                case arr[2]:
+                    h1.innerText = arr[3]
+                    break;
+                default:
+                    h1.innerText = arr[0]
+            }
+        }
+        h1.addEventListener('click', handleClicks)
+    */
+
+        //5
+        '{"greeting":"hello"}'
+        const jsonStr = '{"greeting":"hello"}'
+        JSON.parse(jsonStr)
+        const aPlainObj = JSON.parse(jsonStr)
+        aPlainObj.greeting = 'h1'
+        aPlainObj
+        const data = {
+            firstName: "Tina",
+            lastName: "Roy",
+            greeting: "hello"
+        }
+        JSON.stringify(data)
+        
+    </script>
+</body>
+
+</html>
+
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular script</title>
+</head>
+<body>
+    Regular, "old school" JS script.
+    <script type="text/javascript">
+        console.log("hello from the script tag")
+    </script>
+    <script>
+        console.log("The text/javascript is the default value: ")
+        console.log("Don't have to use with script tag")
+        console.log("It is implied")
+    </script>
+</body>
+</html> -->
