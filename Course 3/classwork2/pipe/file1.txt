@@ -1,0 +1,21 @@
+*** PIPE ***
+
+coder@677f7ccd9b5e:~/project/lab$ ls
+dir1  dir2  file1.txt  file2.txt
+
+coder@677f7ccd9b5e:~/project/lab$ cat file1.txt
+
+hello this is filecoder@677f7ccd9b5e:~/project/lab$ wc file1.txt -w
+4 file1.txt
+
+coder@677f7ccd9b5e:~/project/lab$ ls
+dir1  dir2  file1.txt  file2.txt
+
+coder@677f7ccd9b5e:~/project/lab$ ls | wc -w
+4
+coder@677f7ccd9b5e:~/project/lab$ cat file1.txt | wc -w
+4
+coder@677f7ccd9b5e:~/project/lab$ cat file1.txt | wc -w
+51
+coder@677f7ccd9b5e:~/project/lab$ cat file1.txt file2.txt | wc -w
+157

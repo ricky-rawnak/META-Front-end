@@ -1,0 +1,3 @@
+total 1
+-rw-r--r-- 1 User 197121 83 Jan 20 18:11 input.txt
+-rw-r--r-- 1 User 197121  0 Jan 20 18:12 output.txt

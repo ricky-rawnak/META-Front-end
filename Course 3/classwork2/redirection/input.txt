@@ -1,0 +1,66 @@
+This cmd makes you insert text in the input text file through command prompt. YAY!
+Following cmds's:
+
+
+
+User@DESKTOP-PNIVTRP MINGW64 /e/Documents/COURSES/Coding/META Front-end/Course 3/classwork2/pipe (main)
+$ cd ..
+
+User@DESKTOP-PNIVTRP MINGW64 /e/Documents/COURSES/Coding/META Front-end/Course 3/classwork2 (main)
+$ mkdir redirection
+
+User@DESKTOP-PNIVTRP MINGW64 /e/Documents/COURSES/Coding/META Front-end/Course 3/classwork2 (main)
+$ cd redirection
+
+User@DESKTOP-PNIVTRP MINGW64 /e/Documents/COURSES/Coding/META Front-end/Course 3/classwork2/redirection (main)
+$ cat > input.txt
+This cmd makes you insert text in the input text file through command prompt. YAY!
+
+User@DESKTOP-PNIVTRP MINGW64 /e/Documents/COURSES/Coding/META Front-end/Course 3/classwork2/redirection (main)
+$ cat < input.txt
+This cmd makes you insert text in the input text file through command prompt. YAY!
+
+User@DESKTOP-PNIVTRP MINGW64 /e/Documents/COURSES/Coding/META Front-end/Course 3/classwork2/redirection (main)
+$ ls
+input.txt
+
+User@DESKTOP-PNIVTRP MINGW64 /e/Documents/COURSES/Coding/META Front-end/Course 3/classwork2/redirection (main)
+$ ls -l
+total 1
+-rw-r--r-- 1 User 197121 83 Jan 20 18:11 input.txt
+
+User@DESKTOP-PNIVTRP MINGW64 /e/Documents/COURSES/Coding/META Front-end/Course 3/classwork2/redirection (main)
+$ ls -l > output.txt
+
+User@DESKTOP-PNIVTRP MINGW64 /e/Documents/COURSES/Coding/META Front-end/Course 3/classwork2/redirection (main)
+$ ls
+input.txt  output.txt
+
+User@DESKTOP-PNIVTRP MINGW64 /e/Documents/COURSES/Coding/META Front-end/Course 3/classwork2/redirection (main)
+$ mkdir projects
+
+User@DESKTOP-PNIVTRP MINGW64 /e/Documents/COURSES/Coding/META Front-end/Course 3/classwork2/redirection (main)
+$ less output.txt
+
+User@DESKTOP-PNIVTRP MINGW64 /e/Documents/COURSES/Coding/META Front-end/Course 3/classwork2/redirection (main)
+$ ls -l /bin/usr > error.txt
+ls: cannot access '/bin/usr': No such file or directory
+
+User@DESKTOP-PNIVTRP MINGW64 /e/Documents/COURSES/Coding/META Front-end/Course 3/classwork2/redirection (main)
+$ ls -l /bin/usr 2> error.txt
+
+User@DESKTOP-PNIVTRP MINGW64 /e/Documents/COURSES/Coding/META Front-end/Course 3/classwork2/redirection (main)
+$ less error.txt
+
+User@DESKTOP-PNIVTRP MINGW64 /e/Documents/COURSES/Coding/META Front-end/Course 3/classwork2/redirection (main)
+$ ls -l /bin/usr > error_output.txt
+ls: cannot access '/bin/usr': No such file or directory
+
+User@DESKTOP-PNIVTRP MINGW64 /e/Documents/COURSES/Coding/META Front-end/Course 3/classwork2/redirection (main)
+$ ls -l /bin/usr > error_output.txt 2>&1
+
+User@DESKTOP-PNIVTRP MINGW64 /e/Documents/COURSES/Coding/META Front-end/Course 3/classwork2/redirection (main)
+$ less error_output.txt
+
+User@DESKTOP-PNIVTRP MINGW64 /e/Documents/COURSES/Coding/META Front-end/Course 3/classwork2/redirection (main)
+$
