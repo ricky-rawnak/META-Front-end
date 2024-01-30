@@ -1,0 +1,266 @@
+User@DESKTOP-PNIVTRP MINGW64 /e/Documents/COURSES/Coding/META Front-end/Course 3/classwork2/grep (main)
+$ ls -l
+total 1
+-rw-r--r-- 1 User 197121 442 Jan 21 23:31 names.txt
+
+User@DESKTOP-PNIVTRP MINGW64 /e/Documents/COURSES/Coding/META Front-end/Course 3/classwork2/grep (main)
+$ less names.txt
+
+User@DESKTOP-PNIVTRP MINGW64 /e/Documents/COURSES/Coding/META Front-end/Course 3/classwork2/grep (main)
+$ grep Sam names.txt
+Camden Samuels
+Sam kang
+Samuel Turner
+Esmeralda Samuel
+Samuel Brooks
+Samuelle Foster
+Samira Hayes
+
+User@DESKTOP-PNIVTRP MINGW64 /e/Documents/COURSES/Coding/META Front-end/Course 3/classwork2/grep (main)
+$ grep -i Sam names.txt
+Camden Samuels
+Sam kang
+Samuel Turner
+Esmeralda Samuel
+Samuel Brooks
+Samuelle Foster
+Samira Hayes
+
+User@DESKTOP-PNIVTRP MINGW64 /e/Documents/COURSES/Coding/META Front-end/Course 3/classwork2/grep (main)
+$ grep -w Sam names.txt
+Sam kang
+
+User@DESKTOP-PNIVTRP MINGW64 /e/Documents/COURSES/Coding/META Front-end/Course 3/classwork2/grep (main)
+$ ls /bin
+'[.exe'*                         msys-hdb-9.dll*
+ addgnupghome*                   msys-heimbase-1.dll*
+ applygnupgdefaults*             msys-heimntlm-0.dll*
+ arch.exe*                       msys-history8.dll*
+ astextplain*                    msys-hogweed-6.dll*
+ autopoint*                      msys-hx509-5.dll*
+ awk.exe*                        msys-iconv-2.dll*
+ b2sum.exe*                      msys-idn2-0.dll*
+ backup*                         msys-intl-8.dll*
+ base32.exe*                     msys-kadm5clnt-7.dll*
+ base64.exe*                     msys-kadm5srv-8.dll*
+ basename.exe*                   msys-kafs-0.dll*
+ basenc.exe*                     msys-kdc-2.dll*
+ bash.exe*                       msys-krb5-26.dll*
+ bashbug*                        msys-ksba-8.dll*
+ bunzip2.exe*                    msys-lz4-1.dll*
+ bzcat.exe*                      msys-lzma-5.dll*
+ bzcmp*                          msys-magic-1.dll*
+ bzdiff*                         msys-menuw6.dll*
+ bzegrep*                        msys-metalink-3.dll*
+ bzfgrep*                        msys-mpfr-6.dll*
+ bzgrep*                         msys-ncurses++w6.dll*
+ bzip2.exe*                      msys-ncursesw6.dll*
+ bzip2recover.exe*               msys-nettle-8.dll*
+ bzless*                         msys-nghttp2-14.dll*
+ bzmore*                         msys-npth-0.dll*
+ c_rehash*                       msys-p11-kit-0.dll*
+ captoinfo.exe*                  msys-panelw6.dll*
+ cat.exe*                        msys-pcre-1.dll*
+ chattr.exe*                     msys-pcre2-8-0.dll*
+ chcon.exe*                      msys-perl5_32.dll*
+ chgrp.exe*                      msys-psl-5.dll*
+ chmod.exe*                      msys-readline8.dll*
+ chown.exe*                      msys-roken-18.dll*
+ chroot.exe*                     msys-sasl2-3.dll*
+ cksum.exe*                      msys-serf-1-0.dll*
+ clear.exe*                      msys-sl-0.dll*
+ cmp.exe*                        msys-smartcols-1.dll*
+ column.exe*                     msys-sqlite3-0.dll*
+ comm.exe*                       msys-ssh2-1.dll*
+ core_perl/                      msys-ssl-1.1.dll*
+ cp.exe*                         msys-svn_client-1-0.dll*
+ csplit.exe*                     msys-svn_delta-1-0.dll*
+ cut.exe*                        msys-svn_diff-1-0.dll*
+ cygcheck.exe*                   msys-svn_fs_fs-1-0.dll*
+ cygpath.exe*                    msys-svn_fs_util-1-0.dll*
+ cygwin-console-helper.exe*      msys-svn_fs_x-1-0.dll*
+ d2u.exe*                        msys-svn_fs-1-0.dll*
+ dash.exe*                       msys-svn_ra_local-1-0.dll*
+ date.exe*                       msys-svn_ra_serf-1-0.dll*
+ dd.exe*                         msys-svn_ra_svn-1-0.dll*
+ df.exe*                         msys-svn_ra-1-0.dll*
+ diff.exe*                       msys-svn_repos-1-0.dll*
+ diff3.exe*                      msys-svn_subr-1-0.dll*
+ dir.exe*                        msys-svn_swig_perl-1-0.dll*
+ dircolors.exe*                  msys-svn_swig_py-1-0.dll*
+ dirmngr.exe*                    msys-svn_swig_ruby-1-0.dll*
+ dirmngr-client.exe*             msys-svn_wc-1-0.dll*
+ dirname.exe*                    msys-tasn1-6.dll*
+ docx2txt*                       msys-ticw6.dll*
+ docx2txt.pl*                    msys-unistring-2.dll*
+ dos2unix.exe*                   msys-uuid-1.dll*
+ du.exe*                         msys-wind-0.dll*
+ dumpsexp.exe*                   msys-xml2-2.dll*
+ echo.exe*                       msys-xslt-1.dll*
+ egrep*                          msys-z.dll*
+ env.exe*                        mv.exe*
+ envsubst.exe*                   nano.exe*
+ ex.exe*                         nettle-hash.exe*
+ expand.exe*                     nettle-lfib-stream.exe*
+ expr.exe*                       nettle-pbkdf2.exe*
+ factor.exe*                     ngettext.exe*
+ false.exe*                      nice.exe*
+ fgrep*                          nl.exe*
+ fido2-assert.exe*               nohup.exe*
+ fido2-cred.exe*                 notepad*
+ fido2-token.exe*                nproc.exe*
+ file.exe*                       numfmt.exe*
+ find.exe*                       od.exe*
+ findssl.sh*                     openssl.exe*
+ fmt.exe*                        p11-kit.exe*
+ fold.exe*                       passwd.exe*
+ funzip.exe*                     paste.exe*
+ gapplication.exe*               patch.exe*
+ gawk.exe*                       pathchk.exe*
+ gawk-5.0.0.exe*                 perl.exe*
+ gdbus.exe*                      perl5.32.0.exe*
+ gencat.exe*                     pinentry.exe*
+ getconf.exe*                    pinentry-w32.exe*
+ getemojis*                      pinky.exe*
+ getfacl.exe*                    pkcs1-conv.exe*
+ getopt.exe*                     pldd.exe*
+ gettext.exe*                    pluginviewer.exe*
+ gettext.sh*                     pr.exe*
+ gettextize*                     printenv.exe*
+ gio-querymodules.exe*           printf.exe*
+ git-flow*                       ps.exe*
+ git-flow-bugfix                 psl.exe*
+ gitflow-common                  psl-make-dafsa*
+ git-flow-config                 ptx.exe*
+ git-flow-feature                pwd.exe*
+ git-flow-hotfix                 readlink.exe*
+ git-flow-init                   realpath.exe*
+ git-flow-log                    rebase.exe*
+ git-flow-release                rebaseall*
+ gitflow-shFlags                 recode-sr-latin.exe*
+ git-flow-support                regtool.exe*
+ git-flow-version                reset.exe*
+ gkill.exe*                      restore*
+ glib-compile-schemas.exe*       rm.exe*
+ gobject-query.exe*              rmdir.exe*
+ gpg.exe*                        rnano.exe*
+ gpg-agent.exe*                  runcon.exe*
+ gpgconf.exe*                    rview.exe*
+ gpg-connect-agent.exe*          rvim.exe*
+ gpg-error.exe*                  sasldblistusers2.exe*
+ gpgparsemail.exe*               saslpasswd2.exe*
+ gpgscm.exe*                     scp.exe*
+ gpgsm.exe*                      sdiff.exe*
+ gpgtar.exe*                     sed.exe*
+ gpgv.exe*                       seq.exe*
+ gpg-wks-server.exe*             setfacl.exe*
+ grep.exe*                       setmetamode.exe*
+ groups.exe*                     sexp-conv.exe*
+ gsettings.exe*                  sftp.exe*
+ gunzip*                         sh.exe*
+ gzexe*                          sha1sum.exe*
+ gzip.exe*                       sha224sum.exe*
+ head.exe*                       sha256sum.exe*
+ hmac256.exe*                    sha384sum.exe*
+ hostid.exe*                     sha512sum.exe*
+ hostname.exe*                   shred.exe*
+ iconv.exe*                      shuf.exe*
+ id.exe*                         sleep.exe*
+ infocmp.exe*                    sort.exe*
+ infotocap.exe*                  split.exe*
+ install.exe*                    ssh.exe*
+ join.exe*                       ssh-add.exe*
+ kbxutil.exe*                    ssh-agent.exe*
+ kill.exe*                       ssh-copy-id*
+ ldd.exe*                        sshd.exe*
+ ldh.exe*                        ssh-keygen.exe*
+ less.exe*                       ssh-keyscan.exe*
+ lessecho.exe*                   ssh-pageant.exe*
+ lesskey.exe*                    ssp.exe*
+ link.exe*                       start*
+ ln.exe*                         stat.exe*
+ locale.exe*                     strace.exe*
+ locate.exe*                     stty.exe*
+ logname.exe*                    sum.exe*
+ ls.exe*                         sync.exe*
+ lsattr.exe*                     tabs.exe*
+ mac2unix.exe*                   tac.exe*
+ md5sum.exe*                     tail.exe*
+ minidumper.exe*                 tar.exe*
+ mintheme*                       tee.exe*
+ mintty.exe*                     test.exe*
+ mkdir.exe*                      tic.exe*
+ mkfifo.exe*                     tig.exe*
+ mkgroup.exe*                    timeout.exe*
+ mknod.exe*                      toe.exe*
+ mkpasswd.exe*                   touch.exe*
+ mktemp.exe*                     tput.exe*
+ mount.exe*                      tr.exe*
+ mpicalc.exe*                    true.exe*
+ msgattrib.exe*                  truncate.exe*
+ msgcat.exe*                     trust.exe*
+ msgcmp.exe*                     tset.exe*
+ msgcomm.exe*                    tsort.exe*
+ msgconv.exe*                    tty.exe*
+ msgen.exe*                      tzset.exe*
+ msgexec.exe*                    u2d.exe*
+ msgfilter.exe*                  umount.exe*
+ msgfmt.exe*                     uname.exe*
+ msggrep.exe*                    uncompress*
+ msginit.exe*                    unexpand.exe*
+ msgmerge.exe*                   uniq.exe*
+ msgunfmt.exe*                   unix2dos.exe*
+ msguniq.exe*                    unix2mac.exe*
+ msys-2.0.dll*                   unlink.exe*
+ msys-apr-1-0.dll*               unzip.exe*
+ msys-aprutil-1-0.dll*           unzipsfx.exe*
+ msys-asn1-8.dll*                update-ca-trust*
+ msys-asprintf-0.dll*            updatedb*
+ msys-assuan-0.dll*              users.exe*
+ msys-atomic-1.dll*              vdir.exe*
+ msys-blkid-1.dll*               vendor_perl/
+ msys-bz2-1.dll*                 vi*
+ msys-cbor-0.dll*                view.exe*
+ msys-charset-1.dll*             vim.exe*
+ msys-com_err-1.dll*             vimdiff.exe*
+ msys-crypt-0.dll*               vimtutor*
+ msys-crypto-1.1.dll*            watchgnupg.exe*
+ msys-curl-4.dll*                wc.exe*
+ msys-edit-0.dll*                which.exe*
+ msys-expat-1.dll*               who.exe*
+ msys-exslt-0.dll*               whoami.exe*
+ msys-fdisk-1.dll*               winpty.dll*
+ msys-ffi-7.dll*                 winpty.exe*
+ msys-fido2-1.dll*               winpty-agent.exe*
+ msys-formw6.dll*                winpty-debugserver.exe*
+ msys-gcc_s-seh-1.dll*           wordpad*
+ msys-gcrypt-20.dll*             xargs.exe*
+ msys-gettextlib-0-19-8-1.dll*   xgettext.exe*
+ msys-gettextpo-0.dll*           xxd.exe*
+ msys-gettextsrc-0-19-8-1.dll*   yat2m.exe*
+ msys-gio-2.0-0.dll*             yes.exe*
+ msys-glib-2.0-0.dll*            zcat*
+ msys-gmodule-2.0-0.dll*         zcmp*
+ msys-gmp-10.dll*                zdiff*
+ msys-gmpxx-4.dll*               zegrep*
+ msys-gnutls-30.dll*             zfgrep*
+ msys-gnutlsxx-28.dll*           zforce*
+ msys-gobject-2.0-0.dll*         zgrep*
+ msys-gomp-1.dll*                zipgrep*
+ msys-gpg-error-0.dll*           zipinfo.exe*
+ msys-gssapi-3.dll*              zless*
+ msys-gthread-2.0-0.dll*         zmore*
+ msys-hcrypto-4.dll*             znew*
+
+User@DESKTOP-PNIVTRP MINGW64 /e/Documents/COURSES/Coding/META Front-end/Course 3/classwork2/grep (main)
+$ ls /bin | grep zip
+bunzip2.exe*
+bzip2.exe*
+bzip2recover.exe*
+funzip.exe*
+gunzip*
+gzip.exe*
+unzip.exe*
+unzipsfx.exe*
+zipgrep*
+zipinfo.exe*

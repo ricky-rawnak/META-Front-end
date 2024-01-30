@@ -1,0 +1,47 @@
+
+coder@c64062ae82ee:~/project$ gh auth login
+? What account do you want to log into? GitHub.com                        ? What is your preferred protocol for Git operations? HTTPS               ? Authenticate Git with your GitHub credentials? Yes
+? How would you like to authenticate GitHub CLI? Paste an authentication token
+Tip: you can generate a Personal Access Token here https://github.com/settings/tokens
+The minimum required scopes are 'repo', 'read:org', 'workflow'.
+? Paste your authentication token: ***************************************- gh config set -h github.com git_protocol https
+✓ Configured git protocol
+✓ Logged in as ricky-rawnak
+
+
+A new release of gh is available: 2.10.1 → 2.42.1
+https://github.com/cli/cli/releases/tag/v2.42.1
+
+coder@c64062ae82ee:~/project$ gh repo clone ricky-rawnak/repo-exercise
+Cloning into 'repo-exercise'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 878 bytes | 11.00 KiB/s, done.
+coder@c64062ae82ee:~/project$ cd repo-exercise
+coder@c64062ae82ee:~/project$ mv result.txt /repo-exercise
+coder@c64062ae82ee:~/project/repo-exercise$ git add result.txt
+coder@c64062ae82ee:~/project/repo-exercise$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   result.txt
+
+coder@c64062ae82ee:~/project/repo-exercise$ git config --global user.email rickyrawnak@gmail.com
+coder@c64062ae82ee:~/project/repo-exercise$ git config --global user.name ricky-rawnak
+coder@c64062ae82ee:~/project/repo-exercise$ git commit -m "Successful exercise"
+[main 37ff1f7] Successful exercise
+ 1 file changed, 1 insertion(+)
+ create mode 100755 result.txt
+coder@c64062ae82ee:~/project/repo-exercise$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 32 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 294 bytes | 42.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/ricky-rawnak/repo-exercise.git
+   8c06605..37ff1f7  main -> main
+coder@c64062ae82ee:~/project/repo-exercise$ 

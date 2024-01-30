@@ -1,0 +1,77 @@
+coder@b7fa083504a3:~/project$ gh auth login
+? What account do you want to log into? GitHub.com
+? What is your preferred protocol for Git operations? HTTPS
+? Authenticate Git with your GitHub credentials? Yes
+? How would you like to authenticate GitHub CLI? Paste an authentication token
+Tip: you can generate a Personal Access Token here https://github.com/settings/tokens
+The minimum required scopes are 'repo', 'read:org', 'workflow'.
+? Paste your authentication token: ****************************************
+- gh config set -h github.com git_protocol https
+✓ Configured git protocol
+✓ Logged in as ricky-rawnak
+
+
+A new release of gh is available: 2.10.1 → 2.42.1
+https://github.com/cli/cli/releases/tag/v2.42.1
+
+coder@b7fa083504a3:~/project$ gh repo clone ricky-rawnak/class-repo
+Cloning into 'class-repo'...
+remote: Enumerating objects: 41, done.
+remote: Counting objects: 100% (41/41), done.
+remote: Compressing objects: 100% (25/25), done.
+remote: Total 41 (delta 5), reused 34 (delta 5), pack-reused 0
+Unpacking objects: 100% (41/41), 7.62 KiB | 7.00 KiB/s, done.
+Updating upstream
+From https://github.com/vintagetwinmike/test
+ * [new branch]      master     -> upstream/master
+coder@b7fa083504a3:~/project$ cd class-repo
+coder@b7fa083504a3:~/project/class-coder@b7fa083504a3:~/project/class-coder@b7fa083504a3:~/project/class-repo$ cat class.txt
+Crimson
+Orange
+Green
+Cyan
+Yellow
+Ivory
+
+Rach!
+India
+coder@b7fa083504a3:~/project/class-coder@b7fa083504a3:~/project/class-repo$ cat class.txt
+Crimson
+Orange
+Blue
+Cyan
+Yellow
+Charcoal
+Khaki
+Coral
+Silver
+Fuchsia
+Purple
+Brown
+coder@b7fa083504a3:~/project/class-          coder@b7fa083504a3:~/project/class-repo$ git diff
+diff --git a/class.txt b/class.txt
+index d05e4bf..e1ad458 100644
+--- a/class.txt
++++ b/class.txt
+@@ -1,10 +1,13 @@
+ Crimson
+ Orange
+-Green
++Blue
+ Cyan
+coder@b7fa083504a3:~/project/class-repo$ git add class.txt
+coder@b7fa083504a3:~/project/class-repo$ git config --global user.name "ricky-rawnak"
+coder@b7fa083504a3:~/project/class-repo$ git config --global user.email rickyrawnak@gmail.com
+
+coder@b7fa083504a3:~/project/class-repo$ git commit -m "git commit"
+[master 9bbca08] git commit
+ 1 file changed, 9 insertions(+), 6 deletions(-)
+coder@b7fa083504a3:~/project/class-repo$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 32 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 408 bytes | 68.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/ricky-rawnak/class-repo.git
+   d0aa981..9bbca08  master -> master
