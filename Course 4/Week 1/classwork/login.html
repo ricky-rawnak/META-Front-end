@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+
+    <!--------------- Links --------------->
+
+    <link rel="stylesheet" href="style.css">
+
+    
+    <!--------------- Style --------------->
+
+<style>
+    input:focus:invalid{
+        border: 2px solid red;
+    }
+</style>
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo" id="logo" height="215" width="215">
+    </header>
+  
+    <main>
+        <h1>Login</h1>
+        
+    <!--------------- Login Form --------------->
+
+        <form>
+            <div>
+                <label for="user_fname">Username</label><br>
+                <input type="text" id="user_fname" name="user_fname" required>
+            </div>
+
+            <div>
+                <label for="user_password">Password</label><br>
+                <input type="password" id="user_password" name="user_password" required>
+            </div>
+
+            <div>
+                <button type="submit">Login</button>
+            </div>
+        </form>
+
+    </main>
+
+    <footer>
+        <p>Copyright Little Lemon</p>
+
+    </footer>
+
+</body>
+
+</html>
