@@ -1,0 +1,14 @@
+body{
+    background-color: #E0E0E2; 
+    text-align: center;
+    
+}
+ h1, h2{
+     color:#721817;
+ }
+ul{
+    list-style-type: none;
+}
+li{
+    display: inline;
+}
